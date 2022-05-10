@@ -13,7 +13,6 @@
 #    limitations under the License.
 
 import argparse
-from argparse import Namespace
 
 from typing import List, Tuple
 
@@ -73,4 +72,6 @@ def run_pipeline(custom_args, beam_args):
 
 
 if __name__ == '__main__':
+    # Run this script with this command (in the shell):
+    # python main.py --runner=DirectRunner --input-location=./data/el_quijote.txt --output-location=out/words.csv
     main()
